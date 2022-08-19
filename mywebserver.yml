@@ -1,8 +1,8 @@
 ---
-hosts: all
-tasks: 
-- name: install webserver
-  apt: 
+- hosts: all
+  tasks: 
+  - name: install webserver
+    apt: 
       name: apache2
       state: present
       
