@@ -1,4 +1,6 @@
 ---
 myvar : value
-mywebpackonubutu : openjdk-8-jre
-mywebserveronredhat : java-1.8.0-openjdk
+mywebpackonubutu : apache2
+mywebserveronredhat : httpd
+myjavainstallonubuntu : openjdk-8-jre
+myjavainstallonRedHat : java-1.8.0-openjdk
