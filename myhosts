@@ -15,3 +15,9 @@
 
 [myRedHatservers]
 172.31.6.171
+
+
+[mywebservers:vars]
+myvar = value
+mywebpackonubutu = apache2
+mywebserveronredhat = httpd
