@@ -1,9 +1,5 @@
 
 mywebpackonubutu : apache2
 mywebserveronredhat : httpd
-myjavapackonubuntu : apache2
-myjavapackonRedHat : httpd
-
-
-
-## openjdk-8-jre , java-1.8.0-openjdk
+myjavapackonubuntu : openjdk-8-jre
+myjavapackonRedHat : java-1.8.0-openjdk
