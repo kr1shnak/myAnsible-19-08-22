@@ -25,3 +25,9 @@
         url: https://get.jenkins.io/war-stable/2.346.3/jenkins.war
         dest: /home/ubuntu/jenkins.war
         force_basic_auth: yes
+  
+
+  - name: Create a directory if it does not exist
+    file:
+    path: /home/ubuntu/myfolder22
+    state: directory
