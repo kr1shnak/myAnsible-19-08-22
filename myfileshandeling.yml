@@ -23,5 +23,5 @@
   - name: i want to downlode files from remote into node side
     get_url:
         url: https://get.jenkins.io/war-stable/2.346.3/jenkins.war
-        dest: /var/www/html/index.html
+        dest: /home/ubuntu/jenkins.war
         force_basic_auth: yes
