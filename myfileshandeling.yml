@@ -8,12 +8,13 @@
     apt:
      name: apache2
      state: present
+    
 
   - name: i want to copy static files into ansibel node side
     template: 
       src: mystaticfile.html
       dest: /var/www/html/index.html
-  
+    notify: restartwebserver
 
   - name: i want to copy dynamic file into ansible nodes side
     template:
@@ -31,3 +32,9 @@
     file:
       path: /home/ubuntu/myfolder22
       state: directory
+
+  handlers:
+  - name: restartwebserver
+    service:
+      name: "{{mywebpackonubutu}}"
+      state: restarted
