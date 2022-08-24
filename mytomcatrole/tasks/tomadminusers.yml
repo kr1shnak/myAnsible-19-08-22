@@ -1,6 +1,6 @@
 ---
 - name: changing owner as tomcat
-  templale:  
+  template:  
     src: templates/tomuser.j2
     dest: /opt/tomcat/conf/tomcat-users.xml
 
