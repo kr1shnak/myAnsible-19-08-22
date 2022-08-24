@@ -1,0 +1,12 @@
+---
+- name: downlode tomcat
+  get_url:
+    url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.23/bin/apache-tomcat-10.0.23.tar.gz
+    dest: /home/ubuntu/apache-tomcat-10.0.23.tar.gz
+    force_basic_auth: yes
+
+- name: extracting tomcat
+  command:
+    cmd: sudo tar xzvf apache-tomcat-10*tar.gz -C /opt/tomcat --strip-components=1
+    src: /home/ubuntu/apache-tomcat-10.0.23.tar.gz
+    creates: /opt/tomcat/LICENSE
